@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // const modalTimer = setTimeout(openModal, 60000);
+    const modalTimer = setTimeout(openModal, 60000);
 
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -141,7 +141,6 @@ window.addEventListener('DOMContentLoaded', () => {
             window.removeEventListener('scroll', showModalByScroll);
         }
     }
-
     window.addEventListener('scroll', showModalByScroll);
 
 // Slides
@@ -327,8 +326,8 @@ class MenuCard {
                 <div class="menu__item-descr">${this.descr}</div>
                 <div class="menu__item-divider"></div>
                 <div class="menu__item-price">
-                    <div class="menu__item-cost">Цена:</div>
-                    <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
+                    <div class="menu__item-cost">Price:</div>
+                    <div class="menu__item-total"><span>${this.price}</span> грн/day</div>
                 </div>
             </div>
         `;
@@ -339,8 +338,8 @@ class MenuCard {
     new MenuCard(
         "img/tabs/vegy.jpg",
         "vegy",
-        'Меню "Фитнес"',
-        'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+        'Menu "Fitness"',
+        ' Menu "Fitness" is a new approach to cooking: more fresh vegetables and fruits. For people who are interested in sports; active and healthy. This is a brand new product with the best price and high quality!',
         9,
         ".menu .container"
     ).render();
@@ -348,8 +347,8 @@ class MenuCard {
     new MenuCard(
         "img/tabs/elite.jpg",
         "elite",
-        'Меню "“Премиум”"',
-        'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
+        'Menu "Premium"',
+        'Menu "Premium" - we use not only beautiful packaging design, but also high-quality execution of dishes. Red fish, seafood, fruits - a restaurant menu without going to a restaurant! ',
         27,
         '.menu .container'
     ).render();
@@ -357,8 +356,8 @@ class MenuCard {
     new MenuCard(
         "img/tabs/post.jpg",
         "post",
-        'Меню "“Постное”"',
-        'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
+        'Menu "Lenten"',
+        'Our special "Lenten Menu" is a careful selection of ingredients: the complete absence of animal products. Complete harmony with yourself and nature in every element! Everything will be Om!',
         9,
         '.menu .container'
     ).render();
